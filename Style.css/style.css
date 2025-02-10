@@ -1,0 +1,1190 @@
+
+:root {
+    --primary-color: #333;
+    --secondary-color: #666;
+    --bg-color: #f8f8f8;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+}
+
+.top-bar {
+    background-color: #D7CFC4;
+    padding: 8px 0;
+    font-size: 14px;
+    color: #333;
+}
+
+.brand-name {
+    font-family: 'Playfair Display', serif;
+    font-size: 40px;
+    letter-spacing: 2px;
+    margin: 20px 0;
+}
+
+.brand-subtitle {
+    color: var(--secondary-color);
+    letter-spacing: 3px;
+    font-size: 14px;
+}
+
+.hero-section {
+    background-color: var(--bg-color);
+    padding: 80px 0;
+    min-height: 80vh;
+    display: flex;
+    align-items: center;
+}
+.hero_butt {
+    text-align: center;
+}
+
+.collection-title {
+    font-size: 64px;
+    font-family: 'Playfair Display', serif;
+    line-height: 1.1;
+    margin-bottom: 30px;
+    letter-spacing: -1px;
+}
+
+.explore-text {
+    color: var(--secondary-color);
+    letter-spacing: 3px;
+    font-size: 16px;
+    margin-bottom: 15px;
+}
+
+.h_butt{
+    border: 2px solid var(--primary-color);
+    padding: 12px 30px;
+    font-size: 14px;
+    letter-spacing: 2px;
+    transition: all 0.3s ease;
+    background: transparent;
+    color: var(--primary-color);
+    margin-left: 150px;
+    border-radius: 5px;
+}
+
+.shop-now-btn:hover {
+    background: var(--primary-color);
+    color: white;
+    transform: translateY(-2px);
+}
+
+.image-container {
+    position: relative;
+    overflow: hidden;
+    height: 400px;
+}
+
+.image-container img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.3s ease;
+}
+
+.image-container:hover img {
+    transform: scale(1.05);
+}
+
+.sparkle {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    font-size: 24px;
+    animation: sparkle 1.5s infinite;
+    z-index: 2;
+}
+
+.image-overlay {
+    position: absolute;
+    bottom: 20px;
+    right: 20px;
+    color: white;
+    font-family: 'Playfair Display', italic;
+    font-size: 28px;
+    z-index: 2;
+    text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
+}
+
+@keyframes sparkle {
+    0% { opacity: 1; }
+    50% { opacity: 0.5; }
+    100% { opacity: 1; }
+}
+
+.nav-link {
+    color: var(--primary-color);
+    font-size: 14px;
+    letter-spacing: 1px;
+    padding: 8px 16px;
+}
+
+.search-input {
+    border-radius: 0;
+    background-color: #fff;
+    padding: 8px 15px;
+    font-size: 14px;
+    width: 200px;
+}
+
+.search-input:focus {
+    box-shadow: none;
+    outline: none;
+}
+
+.input-group-text {
+    border-radius: 2;
+    padding-left: 15px;
+   
+}
+
+.input-group-text i {
+    font-size: 14px;
+    color: #666;
+}
+
+.input-group {
+    background-color: #fff;
+    border-radius: 0;
+    border: 1px solid #ddd;
+}
+
+.search-btn {
+    background-color: #8B7355;
+    border: none;
+    color: white;
+    padding: 8px 15px;
+    border-radius: 0;
+}
+
+.search-btn:hover {
+    background-color: #6F5B3E;
+    color: white;
+}
+
+.social-icon {
+    margin: 0 8px;
+    color: #333;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.social-icon:hover {
+    color: #8B7355;
+}
+
+.social-icon i {
+    font-size: 14px;
+}
+
+
+
+/* Season Banner  */
+
+
+
+
+.season-banner {
+    background-color: #D7CFC4;
+    padding: 30px 0;
+    position: relative;
+    overflow: hidden;
+}
+
+.season-banner::before,
+.season-banner::after {
+    content: '';
+    position: absolute;
+    width: 1px;
+    height: 100%;
+    background: linear-gradient(to bottom, transparent, rgba(0, 0, 0, 0.1), transparent);
+    top: 0;
+}
+
+
+
+.season-text {
+    font-family: var(--heading-font);
+    color: var(--primary-color);
+    font-size: 16px;
+    letter-spacing: 3px;
+    font-weight: 500;
+    text-transform: uppercase;
+    text-align: center;
+    margin: 0;
+    position: relative;
+    padding: 0 40px;
+    display: inline-block;
+}
+
+
+
+.season-text::before {
+    left: 0;
+}
+
+.season-text::after {
+    right: 0;
+}
+
+@media (max-width: 768px) {
+    .season-banner::before,
+    .season-banner::after {
+        display: none;
+    }
+    
+    .season-text {
+        font-size: 14px;
+        padding: 0 20px;
+    }
+}
+
+
+
+/* Collection Section  */
+
+
+
+.new-arrivals {
+    background-color: #f5f5f5;
+    padding: 50px 0;
+    position: relative;
+}
+
+.new-arrivals-title {
+    font-family: var(--heading-font);
+    font-size: 24px;
+    font-weight: 800;
+    text-transform: uppercase;
+    text-align: center;
+    position: relative;
+    margin: 0;
+    color: #000;
+    text-shadow: 4px 4px 0px rgba(0, 0, 0, 0.15);
+}
+
+.new-arrivals::after {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 1px;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.1);
+    z-index: 1;
+}
+
+@media (max-width: 768px) {
+    .new-arrivals-title {
+        font-size: 36px;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+body {
+    font-family: 'Montserrat', sans-serif;
+    background-color: #FBF9F7;
+}
+
+.product-section {
+    padding: 40px 0;
+    position: relative;
+}
+
+.product-section::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 1px;
+    background-color: #FFE4E1;
+}
+
+.product-card {
+    text-align: center;
+    margin-bottom: 20px;
+    position: relative;
+}
+
+.product-image {
+    width: 100%;
+    aspect-ratio: 1;
+    object-fit: cover;
+    margin-bottom: 12px;
+    border-radius: 4px;
+}
+
+ .s_p{
+    position: absolute;
+    bottom: 30px;
+    left: 10px;
+    background-color: rgba(33, 33, 33, 0.7);
+    color: white;
+    padding: 2px 8px;
+    border-radius: 3px;
+    font-size: 12px;
+}
+
+.product-title {
+    font-size: 14px;
+    color: #333;
+    margin-bottom: 8px;
+    font-weight: 500;
+}
+
+.price-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
+}
+
+.original-price {
+    color: #999;
+    text-decoration: line-through;
+    font-size: 14px;
+}
+
+.sale-price {
+    color: #333;
+    font-weight: 600;
+    font-size: 14px;
+}
+
+.na_butt{
+    display: inline-block;
+    border: 2px solid #333;
+    border-radius: 5px;
+    color: #333;
+    padding: 8px 40px;
+    text-decoration: none;
+    font-size: 14px;
+    transition: all 0.3s ease;
+    margin-top: 30px;
+}
+
+.view-all-btn:hover {
+    background-color: #333;
+    color: white;
+}
+
+.text-center {
+    text-align: center;
+}
+
+
+
+
+
+/* welcome  */
+
+
+
+
+.welcome-section {
+   
+    overflow: hidden;
+    background-color: #D7CFC4;
+    
+}
+
+.arch-container {
+    position: relative;
+    width: 100%;
+    padding-top: 100%; /* Creates a square aspect ratio */
+    overflow: hidden;
+    height: 440px;
+    
+}
+
+.arch-image {
+    position: absolute;
+    top: 0;
+    left: 0;
+    /* width: 100%;
+    height: 115%; */
+    width: 530px;
+    height: 590px;
+    object-fit: cover;
+    object-position: center;
+}
+
+.welcome-content {
+    padding-left: 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 100%;
+}
+
+.welcome-title {
+    font-family: 'Playfair Display', serif;
+    font-size: 64px;
+    font-weight: 400;
+    color: #1A1A1A;
+    margin-bottom: 24px;
+    line-height: 1.2;
+}
+
+.welcome-text {
+    font-size: 16px;
+    line-height: 1.6;
+    color: #4A4A4A;
+    margin-bottom: 32px;
+    max-width: 500px;
+}
+
+.wlc_btn {
+    display: inline-block;
+    border: 2px solid #1A1A1A;
+    border-radius: 5px;
+    color: #1A1A1A;
+    padding: 12px 32px;
+    text-decoration: none;
+    font-size: 14px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    transition: all 0.3s ease;
+    background-color:#ffffff;
+    width: fit-content;
+}
+
+.wlc_btn :hover {
+    background-color: #1A1A1A;
+    color: #fff;
+}
+
+@media (max-width: 991px) {
+    .welcome-content {
+        padding-left: 15px;
+        padding-top: 40px;
+        text-align: center;
+        align-items: center;
+    }
+
+    .welcome-title {
+        font-size: 48px;
+    }
+
+    .arch-container {
+        border-radius: 0 0 200px 200px;
+    }
+}
+
+
+
+
+/* Birthday Sale  */
+
+
+.birthday-sale {
+    padding: 80px 0;
+    overflow: hidden;
+    background-color: #FBF9F7;
+}
+
+.sale-content {
+    padding-right: 50px;
+}
+
+.sale-title {
+    font-size: 64px;
+    font-weight: 300;
+    line-height: 1;
+    margin-bottom: 0;
+    letter-spacing: 2px;
+}
+
+.sale-subtitle {
+    font-size: 120px;
+    font-weight: 400;
+    line-height: 1;
+    margin-bottom: 20px;
+    letter-spacing: 4px;
+}
+
+.sale-offer {
+    font-size: 18px;
+    color: #333;
+    margin-bottom: 30px;
+}
+
+.bd_butt{
+    display: inline-block;
+    border: 2px solid #333;
+    color: #333;
+    border-radius: 5px;
+    
+    padding: 12px 32px;
+    text-decoration: none;
+    font-size: 14px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    transition: all 0.3s ease;
+    background: transparent;
+}
+
+.bd_butt:hover {
+    background-color: #333;
+    color: #fff;
+}
+
+.product-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 15px;
+    transform: rotate(2deg);
+    perspective: 1000px;
+}
+
+.product-item {
+    position: relative;
+    padding-bottom: 100%;
+    transition: transform 0.3s ease;
+}
+
+.product-item:hover {
+    transform: translateY(-5px);
+}
+
+.product-item img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    padding: 8px;
+}
+
+@media (max-width: 991px) {
+    .sale-content {
+        text-align: center;
+        padding-right: 0;
+        margin-bottom: 50px;
+    }
+
+    .sale-title {
+        font-size: 48px;
+    }
+
+    .sale-subtitle {
+        font-size: 80px;
+    }
+
+    .product-grid {
+        transform: rotate(0);
+        margin-top: 40px;
+    }
+}
+
+@media (max-width: 576px) {
+    .product-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+
+/* Birthday sale */
+
+
+/* More accesories  */
+
+
+
+        .category-section {
+            position: relative;
+        }
+
+        .category-container {
+            display: grid;
+            grid-template-rows: repeat(2, minmax(500px, 1fr));
+        }
+
+        .category-block {
+            display: flex;
+            align-items: stretch;
+            position: relative;
+        }
+
+        .category-image {
+            width: 50%;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .category-image img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            object-position: center;
+        }
+
+        .category-content {
+            width: 50%;
+            padding: 80px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+           
+        }
+
+        
+
+        .jewellery .category-content {
+            background-color: #fff;
+        }
+
+        .accessories .category-content {
+            background-color: #CDA28C;
+            order: -1;
+        }
+
+        .category-title {
+            font-family: 'Bodoni Moda', serif;
+            font-size: 42px;
+            letter-spacing: 4px;
+            margin-bottom: 25px;
+            text-transform: uppercase;
+            font-weight: 400;
+            color: #1A1A1A;
+        }
+
+        .category-description {
+            font-size: 15px;
+            line-height: 1.6;
+            color: #4A4A4A;
+            margin-bottom: 30px;
+            max-width: 400px;
+        }
+
+        .ma_butt {
+            display: inline-block;
+            border: 2px solid #1A1A1A;
+            border-radius: 5px;
+            background-color: #ffffff !important;
+            color: #1A1A1A;
+            padding: 10px 30px;
+            text-decoration: none;
+            font-size: 14px;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            transition: all 0.3s ease;
+            width: fit-content;
+            background: transparent;
+        }
+
+        .ma_butt:hover {
+            background-color: hsl(0, 0%, 100%);
+            color: #fff;
+            text-decoration: none;
+        }
+
+        .play-button {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            width: 60px;
+            height: 60px;
+            background-color: rgba(255, 255, 255, 0.9);
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            cursor: pointer;
+            z-index: 2;
+        }
+
+        .play-button::after {
+            content: '';
+            width: 0;
+            height: 0;
+            border-style: solid;
+            border-width: 10px 0 10px 16px;
+            border-color: transparent transparent transparent #333;
+            margin-left: 4px;
+        }
+
+        @media (max-width: 991px) {
+            .category-block {
+                flex-direction: column;
+            }
+
+            .category-image,
+            .category-content {
+                width: 100%;
+            }
+
+            .category-content {
+                padding: 40px 20px;
+                align-items: center;
+                text-align: center;
+            }
+
+            .accessories .category-content {
+                order: 1;
+            }
+
+            .category-description {
+                margin-left: auto;
+                margin-right: auto;
+            }
+        }
+
+
+
+
+
+/* More accesories  */
+
+
+/* our gurantee  */
+
+        .guarantee-content {
+            max-width: 450px;
+            
+        }
+
+        .guse {
+        background-color: #D7CFC4;
+        }
+
+        .guarantee-title {
+            font-family: 'Bodoni Moda', serif;
+            text-transform: uppercase;
+            font-size: 48px;
+            line-height: 1.1;
+            letter-spacing: 2px;
+            color: #1A1A1A;
+            margin-bottom: 20px;
+            font-weight: 400;
+        }
+
+        .guarantee-text {
+            font-size: 15px;
+            line-height: 1.6;
+            color: #4A4A4A;
+            margin-bottom: 0;
+        }
+
+        .features-wrapper {
+            display: flex;
+            justify-content: flex-end;
+            width: 100%;
+        }
+
+        .features {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 30px;
+            width: 100%;
+            max-width: 600px;
+        }
+
+        .feature-item {
+            text-align: center;
+        }
+
+        .feature-icon {
+            width: 40px;
+            height: 40px;
+            margin-bottom: 15px;
+            display: inline-block;
+        }
+
+        .feature-title {
+            font-size: 14px;
+            font-weight: 500;
+            color: #1A1A1A;
+            line-height: 1.4;
+            margin: 0;
+        }
+
+        @media (max-width: 991px) {
+            .features {
+                grid-template-columns: repeat(2, 1fr);
+                gap: 40px 20px;
+                margin: 0 auto;
+            }
+        }
+
+        @media (max-width: 576px) {
+            .guarantee-section {
+                padding: 60px 0;
+            }
+
+            .guarantee-title {
+                font-size: 36px;
+            }
+
+            .features {
+                grid-template-columns: 1fr;
+                gap: 30px;
+            }
+        }
+    
+
+/* our gurantee  */
+
+
+
+/* who we are  */
+
+
+      
+
+        .ww_are{
+            padding: 100px 0;
+            margin: 100px;
+        }
+
+        .main-title {
+            font-family: 'Bodoni Moda', serif;
+            font-size: 52px;
+            text-align: center;
+            color: #1A1A1A;
+            letter-spacing: 2px;
+            margin-bottom: 10px;
+            font-weight: 400;
+        }
+
+        .subtitle {
+            font-size: 15px;
+            text-align: center;
+            color: #4A4A4A;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            margin-bottom: 80px;
+        }
+
+        .content-wrapper {
+            display: flex;
+            background-color: #E5E0DB;
+        }
+
+        .text-section {
+            padding: 80px;
+            width: 50%;
+        }
+
+        .image-section {
+            width: 50%;
+        }
+
+        .section-title {
+            font-family: 'Bodoni Moda', serif;
+            font-size: 42px;
+            color: #1A1A1A;
+            margin-bottom: 30px;
+            letter-spacing: 1px;
+            font-weight: 400;
+        }
+
+        .section-text {
+            font-size: 15px;
+            line-height: 1.8;
+            color: #4A4A4A;
+            margin-bottom: 40px;
+        }
+
+        .view-btn {
+            display: inline-block;
+            border: 1px solid #1A1A1A;
+            border-radius: 5px;
+            color: #1A1A1A;
+            padding: 12px 32px;
+            text-decoration: none;
+            font-size: 14px;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            transition: all 0.3s ease;
+            background-color:aliceblue;
+        }
+
+        .view-btn:hover {
+            background-color: #1A1A1A;
+            color: #fff;
+        }
+
+        .feature-image {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+
+        @media (max-width: 991px) {
+            .content-wrapper {
+                flex-direction: column;
+            }
+
+            .text-section,
+            .image-section {
+                width: 100%;
+            }
+
+            .text-section {
+                padding: 60px 40px;
+            }
+
+            .image-section {
+                height: 500px;
+            }
+        }
+
+        @media (max-width: 576px) {
+            .who-we-are {
+                padding: 60px 0;
+            }
+
+            .main-title {
+                font-size: 42px;
+            }
+
+            .subtitle {
+                margin-bottom: 50px;
+            }
+
+            .text-section {
+                padding: 40px 20px;
+            }
+
+            .section-title {
+                font-size: 36px;
+            }
+
+            .image-section {
+                height: 400px;
+            }
+        }
+    
+
+
+
+
+/* who we are  */
+
+
+
+
+/* follow designer */
+
+.follow-section {
+    padding: 80px 0;
+    background-color: #fff;
+}
+
+.section-title {
+    font-family: 'Bodoni Moda', serif;
+    font-size: 42px;
+    text-align: center;
+    color: #1A1A1A;
+    letter-spacing: 2px;
+    margin-bottom: 50px;
+    font-weight: 400;
+}
+
+.instagram-grid {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    gap: 0;
+    overflow: hidden;
+}
+
+.instagram-item {
+    position: relative;
+    aspect-ratio: 1;
+    overflow: hidden;
+}
+
+.instagram-item img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.3s ease;
+}
+
+.instagram-item:hover img {
+    transform: scale(1.05);
+}
+
+.instagram-item::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.1);
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+
+.instagram-item:hover::after {
+    opacity: 1;
+}
+
+@media (max-width: 1200px) {
+    .instagram-grid {
+        grid-template-columns: repeat(4, 1fr);
+    }
+}
+
+@media (max-width: 768px) {
+    .instagram-grid {
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    .section-title {
+        font-size: 36px;
+        margin-bottom: 40px;
+    }
+}
+
+@media (max-width: 576px) {
+    .instagram-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .follow-section {
+        padding: 60px 0;
+    }
+
+    .section-title {
+        font-size: 32px;
+        margin-bottom: 30px;
+    }
+}
+
+
+
+/* follow designer */
+
+
+
+/* instagram logo  Starts  */
+
+.instagram-button {
+    width: 100px;
+    height: 100px;
+    border: 2px solid #A6988B;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    color: #A6988B;
+    position: relative;
+    transition: all 0.3s ease;
+    margin-bottom: 40px;
+}
+
+.ig_logo {
+    background-color: #ffffff;
+}
+
+
+.instagram-button:hover {
+    border-color: #A6988B;
+    color: #A6988B;
+}
+
+.arrow {
+    position: absolute;
+    right: -30px;
+    font-size: 24px;
+}
+
+.button-text {
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-size: 10px;
+    text-align: center;
+}
+
+
+
+
+/* instagram logo ends  */
+
+
+
+/* Footer Starts  */
+
+.f_main {
+    background-color: #EAE5DE;
+}
+.footer {
+    
+    padding: 50px 0 20px;
+    font-family: Arial, sans-serif;
+}
+.new_footer {
+    background-color:#EAE5DE;
+}
+.footer h5 {
+    font-size: 16px;
+    margin-bottom: 20px;
+}
+.footer ul {
+    list-style: none;
+    padding: 0;
+}
+.footer ul li {
+    margin-bottom: 10px;
+}
+.footer ul li a {
+    color: #666;
+    text-decoration: none;
+    font-size: 14px;
+}
+.footer ul li a:hover {
+    color: #333;
+}
+.social-icons a {
+    color: #666;
+    text-decoration: none;
+    margin-right: 15px;
+    font-size: 14px;
+}
+.subscribe-form input {
+    border-radius: 0;
+    /* margin-bottom: 10px; */
+}
+.subscribe-form .btn {
+   
+   background-color:transparent;
+    color: rgb(0, 0, 0);
+   
+}
+.copyright {
+    font-size: 12px;
+    color: #666;
+    margin-top: 30px;
+    padding-top: 20px;
+    border-top: 1px solid #ddd;
+}
+.payment-icons img {
+    height: 20px;
+    margin-right: 10px;
+}
+
+
+/* Footer Ends  */
